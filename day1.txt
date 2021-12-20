@@ -1,0 +1,359 @@
+List of Softwares & Tools Needed
+1) JDK 8 - Java Development Kit -- https://www.oracle.com/java/technologies/downloads/#java8-windows
+Open Command Prompt/Terminal --- type
+java -version 
+
+C:\Users\Siva>java -version
+java version "11.0.11" 2021-04-20 LTS
+Java(TM) SE Runtime Environment 18.9 (build 11.0.11+9-LTS-194)
+Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.11+9-LTS-194, mixed mode)
+
+
+Lambda, Stream, io optimization, locale, I18n  -- java 1.8 = java 8
+
+2) IDE - Integrated Development Environment (Eclipse/IntelliJ IDEA/ NetBeans)
+
+Eclipse EE - https://www.eclipse.org/downloads/packages/
+Intelli J --  https://www.jetbrains.com/idea/download/#section=windows
+Netbeans -- https://netbeans.apache.org/download/index.html
+
+STS - Spring Tools Suite (Kind of Eclipse) -- https://spring.io/tools
+
+
+3) Database - (MySQL Community Server/MSI Installer)
+MySQL 8.x - https://dev.mysql.com/downloads/mysql/
+https://dev.mysql.com/downloads/installer/
+
+
+(workbench, server, command line client, connector...)
+
+
+4) Front End - (JavaScript/Angular)
+IDE - VS Code - https://code.visualstudio.com/download
+
+
+5) Docker/Jenkins/AWS
+docker desktop - https://www.docker.com/products/docker-desktop
+jenkins -- https://www.jenkins.io/download/
+
+
+JAVA is a Object Oriented Programming Language.
+JAVA is a Platform independent Programming Language (WORA)
+
+WORA - Write Once & Run Anywhere
+
+Multi-purpose, high level, multi-threaded programming language
+
+OOP - Object Oriented Programming (Java/C++)
+POP - Procedural Oriented Programming (C)
+
+
+JDK - Java Development Kit
+JRE - Java RunTime Environment
+JVM - Java Virtual Machine 
+
+
+To write a Java program any text editor (wordpad, notepad, terminal,command prompt)
+ java source code -  .java - extension (should not be .java.txt)
+
+java compiler - javac -- .class -- extension   (converts source code in to byte (object) code  --- Intermediate code)
+
+
+java source code ---> javac ----> java byte code (ex: javac Employee.java)
+
+.java   ----> javac ----> .class 
+
+
+JVM - Java Virtual Machine which is completely developed by software codes (java)  [ex: java Employee]
+
+
+Writting First JAVA program
+
+Step 1) Create a JAVA program and save it in any Text Editor
+Step 2) Compile the java source code using javac
+Step 3) Run the byte code using jvm (java)
+
+
+Java is a compiled & interpreted language 
+
+
+Binary language (0,1) 
+
+java source code (.java) ---> javac --> intermediate lang [byte code .class]  --- compilation step (entire code convertion)
+
+JIT - Just In Time Interpreter (line by line execution)
+
+
+Note : Java is not a pure Object oriented Lang (bcos of primitive data types)
+Java is a platform independent lang but JDK, JRE, JVM all are platform dependent
+
+
+
+
+JRE - Subset
+JDK - SuperSet  (JRE)
+
+
+J2SE - Java 2 Standard Edition (Desktop based application -- Core JAVA)
+J2EE - Java 2 Enterprise Edition (Web/Servlet/JSP/JSF -- Enterprise App devlopment)
+
+WhatsApp --  Install it in Android, iOS, Windows, phones, laptop,tablets
+(browser based access, desktop based access, mobile based access)
+
+J2ME  - Java 2 Mobile/Micro Edition 
+
+
+OOP -
+
+Class - It's a Blue printc (state [property] & behaviour [methods])
+Object - Instance of a class
+
+
+
+Car - name, mfgYear, noOfWheels, transmissionType, speed, 
+
+
+French 
+1) Learning the alphabets
+2) Learning small words 
+3) Learning to make sentences 
+4) Learning the grammer
+5) becoming expert 
+
+
+JAVA (case sensitive lang)
+1) Learn characterset [A-Z, a-z, 0-9, +,-,*,/,%, ++,--, (), [], {}, ->, .,:,;,?, &, |, !, ==, +=, -=,/=,%=, &&, ||, ^, ~, @)
+2) keywords [ if, case, class, int, float, double, ......] [reserved word]
+3) creating expression     mx+c  ===> (m*x)+c 
+4) syntax 
+5) classes and objects, oop features
+
+
+
+public class Employee {
+
+ private  int age;
+ private String name;
+
+}
+
+
+Employee emp;   Object reference creation (Object declaration)
+
+emp = new Employee() ---Object Initialization (Memory allocated in heap area)
+
+
+Stack - LIFO (Last In First Out)  -- Ref variable, method invocations
+Queue - FIFO (First In First Out)
+
+
+Heap - Objects will be created
+
+
+Control Flow Statements
+1) Line by line 
+2) Conditional control statements (if, else if, nested if, switch case)
+3) Iterative/ Looping statements (repetitive statements) [for, while, do while, for each....]
+
+
+package - It's a way of grouping the java programs
+
+entity bean classes - bean/entity/model
+controller classes - controller
+
+Date - java.sql.Date & java.util.Date 
+
+
+IDE -- Workspace (A folder in your computer harddisk) - Any location in the system
+
+
+Create a Workspace folder
+
+Open the Workspace folder in Eclipse IDE
+
+1) File -> New -> Others -> Java Project (Stand-alone/core-java project)
+2) Fill the name of the project 
+3) Select the JRE/JDK Version
+4) Click next and select source(src) and output folder(bin) change
+5) click on "finish"
+6) Click on "Ok" to Open "Java Perspective"
+
+
+Eclipse Shortcut 
+
+Ctrl + = ---> To increase the editor font size
+Ctrl + - ----> To decrease the editor font size
+
+Ctrl + Space ----> Auto Suggestion/ Code completion feature
+
+Ctrl + F11 ---> To Run a Java Program/Project
+
+
+// Single line comment
+	
+	/* Multi 
+	 * line 
+	 * comment
+	 */
+	
+	/** Documentation
+	 ** multi line
+	 ** comment
+	 */
+
+
+
+java se 8 docs --- https://docs.oracle.com/javase/8/docs/api/
+
+
+8 primitive data types (boolean, byte, char, short, int, float, long, double)
+
+operators - unary operator (++,--, !,) - increment & decrement operator
+binary (+,-, *, /, %, &, |, )
+logical (&&, ||, !)
+comparision (<, >, <=, >=, ==, !=)
+assignment (=, +=, -=, /=, *=,%=)
+bitwise operator (&, |, !, ~, ^)
+ternary operator ((conditional_expression)?<true_statements> :<false_statements>;) conditional statement/one line if else;
+
+
+java.lang   --- default package in Java (System, 
+
+
+Types of Classes
+1) Built-in classes/ System defined classes ( System, Date, Boolean)
+2) User defined classes 
+3) Starter class (A class with main method) 
+4) POJO/Simple class [Plain Old Java Object] - A class which is not extending any other class nor implementing any interface
+5) Concrete class/complete class 
+6) Abstract class /In-complete class/Partial class -- A class with abstract/incomplete method
+7) Bean class - A class with properties and getter & setters
+8) Entity Bean class - A Bean class which represents a database table
+9) wrapper classes - (Boolean, Byte, Character, Short, Integer, Float, Long, Double) -  Class which wraps the primitive data type
+10) Super/Parent/Base class
+11) Sub/Child/Derived class
+
+
+Method ---  function defined inside a class 
+
+
+Class --- member variable (property), member functions (methods/behavior)
+
+
+Constrctors - is a special method which will have the same name as the class, to initialize all the member variables to its default value
+
+if it is primitive default value is zero, if it is boolean default value is false, if it object default value is null.
+
+Employee --- Employee() 
+
+types of Constructor
+1) Default /No Argument Constructor [If no constructor is defined explicitly, java will automatically create default constructor]
+2) Parameterized constructor  (partially parameterized, fully parameterized [all args constructor])
+
+
+
+Ctrl+shift+ F ---> To Align/format the code
+
+
+setter methods will help you to modify the object's property
+
+getter methods will help you to read the object's property
+
+Constructor will initialize during object creation whereas the setters will update object's property after object creation.
+
+Constructors call is for one time only, setter methods can be called n number of times.
+
+
+this keyword represents current object
+
+super keyword represents the parent
+
+
+Instance or object scope
+Class or static scope
+Method scope
+Block scope
+
+
+access modifiers
+
+private   --- least accessible
+default/package  --- with in the same package
+protected    --- with in the same package, sub classes in different package
+public  ---- most accessible
+
+
+Non-access modifier /behavior modifiers
+abstract  -- to represent incomplete class/method
+static  -- to represent single value for property/method, 
+final  -- applied to property/method / class [no modification/no override/no extend]
+volatile  -- to avoid storing the property to permanent storage
+transient -- to avoid serialization of property
+strictfp 
+
+
+Git - version control tool
+
+Decentralised version control / scm tool (Software configuration management)
+
+
+SVN, Perforce, Clearcase.... 
+
+Git - Linus Torvald 
+
+Git Command Line - git Bash
+Git GUI - Graphical user interface 
+
+
+Staging Area/ Local Repo (A folder in local file system)/ Remote Repo (A url in web server/github server)
+
+git add/ git commit -m "commit msg"/ git push
+
+
+
+git pull <git-url>
+git log
+
+git status
+
+git merge
+
+git branch
+
+git checkout
+
+
+merge conflict, creating branches
+
+
+
+echo "# RevJavaUpSkillng" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/syskantechnosoft/RevJavaUpSkillng.git
+git push -u origin main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
