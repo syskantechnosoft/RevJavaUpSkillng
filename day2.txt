@@ -1,0 +1,191 @@
+StringAPI
+StringBuilder & StringBuffer
+Arrays, Var-Args, for-each
+Annotations
+TDD(TestDrivenDevelopment)
+JUnit
+Casting
+WrapperClasses
+ObjectClass
+AbstractClass
+Interface
+
+
+
+String in java is a special data type.
+String is actually an object in java.
+
+
+String is immutable in JAVA
+
+immutable - can't be altered after creation (final class)
+
+
+StringBuffer(TS)& StringBuilder -- mutable String [append() & insert()] -- dynamically altered capacity
+
+TS - ThreadSafe
+
+
+Multi Thread Application -- use StringBuffer
+
+If it is Single Thread application - use StringBuilder (fastest)
+
+
+Initial capacity = 16+n (if n is less than 16) [If no initial capacity is mentioned while creating StringBuilder]
+
+
+Ctrl+Space = Auto Code Complete / Auto Suggest feature
+
+
+String Tokenizer
+
+
+Arrays -- Homogeneous data in continuous memory space
+
+Arrays - It's a type of data structure [Way of storing the data in an organised manner]
+
+Structured data
+Name : ABC
+age : 21
+salary : 6500
+
+unstructured data
+abc,43, 6780
+
+arrays type -- single dimesional & multi dimensional array
+   homogeneous & heterogeneous 
+   primitive & object array
+
+
+varargs --- variable arguments (1 or more arguments)
+
+
+Annotations will Start with @ symbol
+
+Annotations are nothing but metadata (data about data)
+
+Java Complete Reference (Book - All about Java)
+
+TOC (Table of Content)
+Index
+Appendix 
+
+
+Annotations are applied to Variables, Methods, Class  [Predefined/Built-in & User-defined/custom annotation]
+
+Custom Annotations
+@interface
+
+
+Casting - Typecasting  - Converting from one primitive to another primitive
+
+1) Explicit type casting (Forced type casting) - narrowing
+2) Implicit type casting  (Auto type casting)  -- widening
+
+boolean -> byte -> short-> int-> long-> double (widening)
+boolean <- byte <- short <- int <- long <- double (narrowing)
+
+
+Abstract/ Incomplete Class
+
+abstract is a keyword which is applicable for Class and methods only
+
+
+If a class is having any abstract method, then it is called abstract class.
+
+
+Abstract method means, incomplete method - Only signature no definition
+
+
+OOP
+1) Data Encapsulation (Hiding Data)  -- by using private member variables and public methods
+2) Abstraction (Hiding Implementation)  - by using abstract methods & classes, by using interfaces
+3) Polymorphism ( Static polymorphism -- Overloading & dynamic polymorphism --- Overriding)
+4) Inheritance - single inheritance, multi-level inheritance 
+
+
+class A, class B 
+
+
+class Doctor {
+ private int id;
+  private String name;
+
+public void doOperate() {
+
+}
+
+}
+
+
+class FamilyDoctor extends Doctor {
+
+public void doOperate() {
+
+}
+
+public void homeVisit() {
+
+}
+
+
+Doctor - Base class/ Super class/Parent class [ Giver]
+
+FamilyDoctor - Derived Class/Sub Class/Child class [Receiver]
+
+
+Doctor -> FamilyDoctor
+
+
+GrandParent--->Child ---> GrandChild [multi-level]
+
+
+parent1 ---
+	--------child  (multiple inheritance)
+parent2 ---
+
+
+
+inheritance can be achieved with the help of extends keyword
+
+
+static polymorphism  or method overloading 
+
+1) redefining a method with a different signature inside the same class 
+
+
+
+
+Interface ---- Surge Protector
+
+Interface -- we can acheive 100% abstraction
+
+
+Types of Interface
+1) Marker Interface - An Interface with no methods is called marker Interface (Serializable)
+2) Functional Interface - An Interface with only one abstract method (Predicate, 
+
+
+
+TDD - Test Driven Development
+
+1) Write the test case before code anything
+2) Bcos of no code, the test case will fail
+3) Then write the code to make the test pass
+4) repeat
+
+Junit download link -- https://search.maven.org/search?q=g:org.junit.jupiter%20AND%20v:5.8.2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
