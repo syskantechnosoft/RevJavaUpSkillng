@@ -1,0 +1,22 @@
+Thread - Light weight Process
+Process - Heavy weight Thread
+
+Windows is a Multi User OS, Multi Tasking, Multi- Core
+
+Processor (CPU), clock speed - Hz (cycles/sec) 2.4GHz
+
+MS-Word - Program/Application /Process 
+Autosaving Thread  
+AutoSpelling Thread
+GrammerCheck Thread
+
+Thread (java.lang)
+
+Runnable (Interface) 
+
+
+Getters & setters for id, name and priority
+
+MAX_PRIORITY  10
+MIN_PRIORITY  1
+NORM_PRIORITY 5
