@@ -1,0 +1,106 @@
+Exception Handling
+
+
+ Exception - A condition in a java program which may lead to unwanted situation
+
+
+
+Throwable 
+    1) Error  -- OutOfMemory, StackOverFlow [Ending the program is the only choice]
+    2) Exception --- If properly handled, you can simple ignore the specific portion which is 
+  throwing exception, and continue with the rest of the code.
+
+
+Types of Exception 
+
+   1) ArithmeticException (child class)
+   2) ArrayIndexOutofBoundException (child)
+   3) ClassNotFoundException
+   4) IOException
+   5) SQLException
+
+ Exception 
+    1) Checked Exception [Compile time Exceptions - Exceptions not belongs to Runtime Exception]
+    2) UnChecked Exception [These are all sub classes of Run-Time Exception]
+
+
+keywords in exception handling
+  1) try
+  2) catch
+  3) finally
+  4) throw
+  5) throws
+
+
+Ways of Handling Exception 
+  1) Using try /catch & finally block (recommended approach)  -- It will smothly run the code/ exit the application
+  2) using throws keyword [passing on the exception handling responsibility to the JVM]
+
+
+Ctrl + / == To toggle the single line comment
+
+
+Exceptions
+When an exceptional condition occurs in the course of a Java program, a special class called an Exception can be thrown, which indicates that something went wrong during the execution of the program. If the exception is not handled anywhere in the program, it will propagate up through the call stack until it is handled by the JVM which then terminates the program.
+
+Exceptions Handling / Declaring Exceptions
+When risky code is written that has the possibility of throwing an exception, it can be dealt with in one of two ways:
+
+Handling means that the risky code is placed inside a try/catch block
+Declaring means that the type of exception to be thrown is listed in the method signature with the throws keyword. This is also called "ducking" the exception - you let the code which calls the method deal with it.
+ 
+
+Unchecked vs Checked Exceptions
+The Exception class and all of its subclasses, except for RuntimeException, are known as "checked exceptions". These represent occasions where it is reasonable to anticipate an unexpected condition, like a file not existing when attempting to write to it (which would result in a FileNotFoundException). Checked exceptions are required to be handled or declared by the programmer - otherwise, the code will not compile.
+
+RuntimeException is a special type of exception - it, and all of its subclasses - are known as "unchecked exceptions". An unchecked exception is an exception that is not required to be handled or declared like checked exceptions are. Some examples include:
+
+ArithmeticException for illegal math operations
+IndexOutOfBoundsException for if you reference an index that is greater than the length of an array
+NullPointerException for if you attempt to perform an operation on a reference variable that points to a null value
+
+
+
+try/catch/finally rules
+
+1) try block must be followed by either catch or finally block or both
+2) try block can have multiple catch block but only one finally block
+3) If there are more than one catch block, catch the child class exception before the parent class
+
+
+Collection API (Application Programming Interface) 
+ -- To handle group of objects together
+ -- List, Set, Map, Queue, Vector 
+
+
+Collection (I) 
+ - List (I), Set(I), Map(I), Queue(I)
+ - ArrayList (C), LinkedList (C), HashSet(C), TreeSet, HashMap(C), TreeMap, 
+
+Collections(C)
+
+List - Will allow duplicates, will allow null,  will  maintain insertion order
+
+
+ArrayList 
+
+1) Easy Operation - Add or remove at the end
+2) Costly operation - insert or removal at the begining or middle
+
+Linked List   
+1) Easy Operation - Insert or remove at the beginning or middle
+2) Costly operation - add or remove at the end
+
+
+Queue 
+
+push - add an element to Queue
+pop - remove an element from Queue
+
+stack - implements LIFO (Last In First Out)
+Queue - implements FIFO (First In First Out)
+
+
+
+
+Generics
