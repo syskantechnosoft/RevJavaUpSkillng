@@ -1,0 +1,235 @@
+Lambdas - Annonymous Functions - method without name
+Annonymous - name less
+
+public void display() --- function signature [function declaration]
+{ //function definition starts here
+
+} // function definition ends here
+
+public static int add() 
+{
+
+return 0;
+}
+
+
+public abstract void show();  -- abstract method 
+
+function is a group of commands enclosed by flower brackets and having a name with normal brackets
+
+method is a function defined inside the class.
+
+public void () {
+}
+
+
+with the help of lambda's we can store the function definition to a variable.
+
+
+public int add(int a, int b)
+{
+ return (a+b);
+}
+
+
+public int  (int a, int b)
+{
+return (a+b);
+}
+
+
+int (int a, int b) {
+return (a+b);
+}
+
+(int a, int b) {
+ return (a+b);
+}
+
+(a,b) {
+return (a+b);
+}
+
+(a,b) return(a+b) ;
+
+(a,b) -> (a+b);  ------ Lambda
+
+Functional Interface
+1) Is a interface with only one abstract method
+2) It can have n no of static and default methods
+
+@FunctionalInterface
+
+All the interfaces defined inside java.util.function package 
+are called as functional interface
+
+In Lambda
+1) brackets are optional when passing only one argument
+2) flower brackets are optional when we have only one statement inside the body
+3) brackets are compulsory when no argument or more than one argument
+4) flower brackets are compulsory when having more than one statement/expression inside the body
+5) return keyword is optional
+
+
+Marker Interface - An interface with no methods (Serializable) 
+
+
+https://www.javatpoint.com/java-lambda-expressions
+
+
+
+Streams (continuous flow of data)
+
+tream provides following features:
+
+Stream does not store elements.
+1) It simply conveys elements from a source such as a data structure, an array, or 
+an I/O channel, through a pipeline of computational operations.
+2)Stream is functional in nature. 
+Operations performed on a stream does not modify it's source. 
+For example, filtering a Stream obtained from a collection produces a new Stream 
+without the filtered elements, rather than removing elements from the source collection.
+3)Stream is lazy and evaluates code only when required.
+4) The elements of a stream are only visited once during the life of a stream. Like an Iterator, a new stream must be generated to revisit the same elements of the source.
+
+
+https://www.javatpoint.com/java-8-stream
+
+
+
+Serialization -- It's way/process of storing the state of a class to a permanent storage (flat file)
+
+
+Class - Combination of state & behaviour (properties, methods)
+
+int, string, char, float... 
+
+Banking - 
+
+
+System.in -- inputStream
+
+System.out -- outputStream
+
+System.err -- errorStream
+
+
+java.io
+
+Stream -- Byte (1 byte/8 bits) 
+
+Reader/Writer - Character Stream (2 bytes/16 bits) 
+
+Ctrl+Shift+O -- Organize imports 
+
+
+Design Pattern - It's a proven solution for a particular challenge/problem
+
+1) travelling from one city to another city
+
+a) travel by road (bus/car/two-wheeler)
+b) travel by air (flight/private jet)
+c) travel by train 
+
+
+while creating an object -- 
+
+1) Singleton - design pattern
+MVC - Model View Controller  [It's a design pattern to create web apps] 
+Model - data
+View - User Interface
+Controller - php/jsp/asp/servlet .....
+
+
+
+
+Core Java Design Patterns
+In core java, there are mainly three types of design patterns, which are further divided into their sub-parts:
+
+1.Creational Design Pattern
+Factory Pattern
+Abstract Factory Pattern
+Singleton Pattern
+Prototype Pattern
+Builder Pattern.
+2. Structural Design Pattern
+Adapter Pattern
+Bridge Pattern
+Composite Pattern
+Decorator Pattern
+Facade Pattern
+Flyweight Pattern
+Proxy Pattern
+3. Behavioral Design Pattern
+Chain Of Responsibility Pattern
+Command Pattern
+Interpreter Pattern
+Iterator Pattern
+Mediator Pattern
+Memento Pattern
+Observer Pattern
+State Pattern
+Strategy Pattern
+Template Pattern
+Visitor Pattern
+
+
+https://www.javatpoint.com/design-patterns-in-java
+
+
+Logging -- Formatting & Storing the content of console 
+
+Log4J - Log for JAVA
+SLF4J - Simple Logging Factory for JAVA
+
+Built-in Logging mechanism 
+
+Logging Levels
+
+ALL
+FATAL
+OFF
+
+DEBUG
+ERROR
+WARN
+INFO 
+
+MAVEN - Project Management Tool
+
+Build, Package, Test, Dependency Management 
+
+xml based tool
+
+pom.xml 
+
+POM - Project Object Model
+
+Maven Project Co-ordinates
+
+groupId (package name)
+artifactId (app name)
+version (number)
+description [optional]
+
+M2_HOME --- C:\apache-maven-3.8.2
+
+path - %M2_HOME%\bin
+
+jar/war - java archieve (Standalone java apps)
+war - Web Archieve(Web Applications)
+
+
+xml files are case and space sensitive 
+
+
+.m2 - - local repo (Initially check for dependency in local repo)
+
+mvnrepository.com -- remote repo
+
+https://www.javatpoint.com/log4j-maven
+
+
+
+
+
